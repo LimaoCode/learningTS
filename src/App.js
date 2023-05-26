@@ -3,11 +3,7 @@ import Formulario from "./componentes/Formulario";
 import Time from "./componentes/Time";
 import Banner from "./componentes/Banner";
 
-interface AppProps {
-  times: string[];
-}
-
-function App(props: AppProps) {
+function App() {
   const times = [
     {
       nome: "Programação",
@@ -48,7 +44,7 @@ function App(props: AppProps) {
 
   const [colaboradores, setColaboradores] = useState([]);
 
-  const aoNovoColaboradorAdicionado = (colaborador: String[]) => {
+  const aoNovoColaboradorAdicionado = (colaborador) => {
     debugger;
     setColaboradores([...colaboradores, colaborador]);
   };
