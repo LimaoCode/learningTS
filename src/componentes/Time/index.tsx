@@ -28,12 +28,13 @@ const Time = ({
             nome={colaborador.nome}
             cargo={colaborador.cargo}
             imagem={colaborador.imagem}
+            data={colaborador.data}
           />
         ))}
       </div>
     </section>
   ) : (
-    ""
+    <></>
   );
 };
 
